@@ -1,0 +1,18 @@
+# ── SECRETS — never commit these ──────────────────────────────
+# NOTE: if you upload to GitHub by dragging files into the website
+# ("Add files via upload"), .gitignore is IGNORED. Keep real secrets
+# OUTSIDE this folder (the OAuth token lives in ~/.dish_oauth/).
+.env
+*client_secret*.json
+*token.json
+config/oauth_*.json
+
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ── Generated pipeline output ─────────────────────────────────
+output/
